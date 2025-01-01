@@ -21,17 +21,27 @@ print(mylist)
 print(mytuple)
 print(mydict)
 
-# re-declaring a variable works
+print("# re-declaring a variable works")
+mfloat = "bob"
+print("mfloat =", mfloat)
 
-# to access a member of a sequence type, use []
+print("# to access a member of a sequence type, use []")
+print("mylist[2]", mylist[2])
 
-# use slices to get parts of a sequence
+print("# use slices to get parts of a sequence")
+print("mylist[0:2]", mylist[0:2])
 
-# you can use slices to reverse a sequence
+print("# you can use slices to reverse a sequence")
+print(mylist[::-1])
 
-# dictionaries are accessed via keys
+print("# dictionaries are accessed via keys")
+print(mydict["one"])
 
 # ERROR: variables of different types cannot be combined
 
 # Global vs. local variables in functions
+def somefunction():
+    myint = 10
+    print(myint)
 
+print(myint)
